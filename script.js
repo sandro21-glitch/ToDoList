@@ -94,7 +94,8 @@ clearAllBtn.addEventListener('click', clearAll)
 
 function clearAll() {
     listsContainer.innerHTML = ''
+    const clear = listArr.length = 0;
     setStorageItem('list', listArr)
-    return listArr.length = 0;
+    return clear
 }
   
