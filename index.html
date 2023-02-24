@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/adb29892fe.js" crossorigin="anonymous"></script>
+    <title>ToDo List</title>
+</head>
+<body>
+
+        <div class="min-h-screen bg-gray-100 flex flex-col items-center font-mono px-10 py-10">
+            <!-- title -->
+            <h1 class="text-3xl text-black font-normal mb-10">ToDo List</h1>
+            <!-- todo container -->
+            <div class="flex flex-col items-center w-full max-w-[30rem]">
+            <!-- input -->
+             <form class="w-full flex items-center mb-10" id="form">
+                <input type="text" class="px-5 py-2 w-full border-emerald-400 border rounded-l-md outline-none" id="form-input">
+                <button type="submit" class="px-2 py-2 bg-gray-100 cursor-pointer text-emerald-400 text-md
+                whitespace-nowrap border-emerald-400 border hover:bg-emerald-100 transition-colors ease-in">Add Item</button>
+             </form>
+             <!-- added list -->
+             <div class="flex flex-col items-center space-y-5 w-full mb-10" id="lists-container">
+                <!-- list items -->
+             </div>
+             <!-- clear items -->
+             <button id="clear--btn" class="w-32 py-1 bg-gray-100 border border-emerald-400 rounded-md
+             text-emerald-400 hover:bg-emerald-100 transition-colors ease-in">
+                Clear all
+             </button>
+            </div>
+        </div>
+
+
+
+    <script type="module" src="/script.js"></script>
+</body>
+</html>
